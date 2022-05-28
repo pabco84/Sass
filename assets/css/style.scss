@@ -1,0 +1,49 @@
+
+
+$fuente: 'Dancing Script', cursive;
+$primary: white;
+$fondo:black;
+$letras:rgb(207, 25, 95);
+$otros:rgb(178, 100, 143);
+
+
+.centrar {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.centrarfoto{
+    display: block;
+    margin: auto;
+
+}
+
+@import "../scss/bootstrap";
+
+.card-img-top{
+    width:80% ;
+    @extend .centrarfoto;
+}
+
+.card-title{
+    color: $otros;
+    
+}
+
+.card-text{
+    @extend .centrar;
+    color:$letras;
+
+}
+
+.btn {
+    --bs-btn-bg: rgb(217, 129, 170);
+}
+
+.card{
+    background-color: black;
+    --bs-card-spacer-y: 2rem;
+    --bs-card-border-width: 13px;
+    font-family: $fuente;
+    }
